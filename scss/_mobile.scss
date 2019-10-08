@@ -1,9 +1,15 @@
 // widescreems
 @include mediaXl {
+    .projects{
+        grid-template-columns: repeat(4, 1fr);
+    }
 
 }
 // Desktops & laptops
 @include mediaLg {
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
     
 }
 // Tablets & Small Laptops
@@ -45,11 +51,45 @@
             background-size: 150px, 150px;
         }
     }
+
+    .about-info{
+        grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
+
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 // Smartphones
 @include mediaSm {
+    #about{
+        padding: 0%;
+    }
     main#home h1 {
         font-size: 4rem;
         margin-top: 10vh;
     } 
+    .bio-image{
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+        max-width: 150px;
+    }
+    #work{
+        .lg-heading{
+            font-size: 3rem;
+        }
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
 }
