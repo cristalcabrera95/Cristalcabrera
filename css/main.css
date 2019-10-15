@@ -160,6 +160,8 @@ main {
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
+  .about-info .skills {
+    max-width: 5rem; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -179,6 +181,8 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #78DE23 5px solid; }
+    .about-info .job .hab-tec {
+      width: 4rem; }
 
 .projects {
   display: grid;
