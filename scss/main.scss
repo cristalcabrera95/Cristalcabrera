@@ -76,6 +76,7 @@ main {
     }
 }
 
+//about
 .about-info{
     display: grid;
     grid-gap: 30px;
@@ -83,7 +84,9 @@ main {
     'bioimage bio bio'
     'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
-
+    .skills {
+        max-width: 5rem;
+    }
     .bio-image{
         grid-area: bioimage;
         margin: auto;
@@ -105,12 +108,18 @@ main {
     }
     .job3 {
         grid-area: job3;
+        
     }
     .job{
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+        .hab-tec{
+            width: 4rem;
+        }
+        
     }
+    
 }
 
 //work
