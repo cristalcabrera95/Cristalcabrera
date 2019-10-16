@@ -282,6 +282,9 @@ main {
 @media screen and (max-width: 500px) {
   #about {
     padding: 0%; }
+    #about .lg-heading {
+      padding: 3rem;
+      font-size: 4rem; }
   main#home h1 {
     font-size: 4rem;
     margin-top: 10vh; }

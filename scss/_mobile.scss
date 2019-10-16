@@ -72,6 +72,10 @@
 @include mediaSm {
     #about{
         padding: 0%;
+        .lg-heading{
+            padding: 3rem;
+            font-size: 4rem;
+        }
     }
     main#home h1 {
         font-size: 4rem;
