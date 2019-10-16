@@ -294,4 +294,6 @@ main {
   #work .lg-heading {
     font-size: 3rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #contact .lg-heading {
+    font-size: 2.5rem; } }
